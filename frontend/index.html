@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GreenRoute Simulator</title>
+    <style>
+        canvas {
+            border: 2px solid #333;
+            background: #f0f0f0;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .controls {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controls">
+        <h1>GreenRoute Live Simulation</h1>
+        <button onclick="startSimulation()">Start Simulation</button>
+        <button onclick="setWeather('Snowy')" style="background: #007bff;">Make It Snow</button>
+        <button onclick="setWeather('Sunny')" style="background: #ffc107; color: black;">Sunshine</button>
+        <p id="status">Status: Waiting...</p>
+        <p id="weather-status">Weather: Sunny</p>
+        <p id="status">Status: Waiting...</p>
+    </div>
+    <canvas id="cityCanvas" width="600" height="400"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
