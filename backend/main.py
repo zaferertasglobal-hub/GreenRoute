@@ -47,7 +47,7 @@ def update_traffic(start: str, end: str, factor: float):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Allow All Adresses
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
