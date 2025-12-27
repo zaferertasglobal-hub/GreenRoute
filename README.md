@@ -1,15 +1,25 @@
-# 🚚 GreenRoute: Dynamic City Logistics Simulator
+🚛 GreenRoute: Smart Logistics and Route Optimization
 
-GreenRoute is a **Dynamic Route Optimization** interface developed for modern city logistics and electric vehicle management. It is designed with fundamental engineering principles (Algorithms, OOP, Web Services) from the TU Dortmund Informatics curriculum.
+This project is a simulation that calculates the shortest and most energy-efficient route for modern urban logistics using the Dijkstra Algorithm.
 
-## ✨ Features
-- **Dynamic Dijkstra Algorithm:** Calculates route costs in real-time based on traffic and weather conditions.
-- **Battery Management:** Automatically directs the vehicle to the nearest charging station if the battery level is low.
-- **Weather Engine:** Changes route preferences in snowy or rainy weather.
-- **Full-Stack Structure:** FastAPI backend and HTML5 Canvas frontend integration.
+🛠️ Technologies
 
-## 🚀 Installation and Operation
+Backend: Python (FastAPI)
 
-1. **Install Dependencies:**
-```bash
-pip install fastapi uvicorn networkx
+Frontend: HTML5 Canvas & JavaScript
+
+Infrastructure: Docker
+
+Algorithm: Dynamic Dijkstra based on NetworkX
+
+🚀 How to Run?
+
+Open Docker Desktop.
+
+Navigate to the backend/ directory in the terminal.
+
+Run docker build -t greenroute-backend .
+
+Start the service with docker run -p 8080:8080 greenroute-backend
+
+Open frontend/index.html in your browser.
